@@ -9,9 +9,10 @@ app.config["SECRET_KEY"] = "string"
 def not_found(e):
     return render_template("notfound.html")
 
+@app.route("/")
 @app.route("/home")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Welcome to Rishaans web app</p>"
 
 @app.route('/test', methods=['GET', 'POST'])
 def test():
