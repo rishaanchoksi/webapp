@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+{%block title%}
+Shipping
+        {%endblock%}
+{%block content%}
+    <p>Hi {{session.get("name", "guest")}} welcome to the world of coding</p>
+    <form action="/shipping" method="post">
+        <label for="">Enter the weight of your package</label>
+        <input type="text" name="weight">
+        <button type="submit">submit</button>
+    </form>
+    {{price}}
+{%endblock%}

@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+{%block title%}
+Even or Odd
+{%endblock%}
+{%block content%}
+    <form action="/validate_num">
+        <label for="">Enter a number</label>
+        <input type="text" name="number">
+        <button type="submit"> submit </button>
+    </form>
+    {{result}}
+
+{%endblock%}

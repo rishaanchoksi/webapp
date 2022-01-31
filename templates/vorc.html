@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+{%block title%}
+Vowel or Consonant
+{%endblock%}
+{%block content%}
+    <form action="/vorc" method="POST">
+        <label>Enter a letter</label>
+        <input type="text" name="letter">
+        <button type="submit">submit</button>
+    </form>
+    <p>{{result}}</p>
+{%endblock%}

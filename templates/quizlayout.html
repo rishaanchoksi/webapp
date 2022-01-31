@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/quiz.css">
+    <style>
+
+    .nav-container {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        box-shadow: 0 0 10px 0;
+        padding: 10px;
+        align-items: center;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        align-items: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style-type: none;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:cadetblue;
+        font-size: 18px;
+    }
+
+    .nav-authentication {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-login {
+        padding-right: 10px;
+    }
+
+    .nav-login button {
+        background-color: white;
+        color:royalblue;
+        border-radius: 6px;
+        font-size: 18px;
+        border: royalblue solid;
+        border-width: 2px;
+        padding: 10px;
+    }
+
+    .nav-signup button {
+        background-color: royalblue;
+        color:white;
+        border-radius: 6px;
+        font-size: 18px;
+        border: royalblue solid;
+        border-width: 2px;
+        padding: 10px;
+    }
+
+
+    .navlogo {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .navlogo .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navlogo img {
+        max-width: 100%;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        
+        <div class="navlogo">
+            <div class="logo">
+            <img src="../static/pythonlogo.png" alt="">
+            </div>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-authentication">
+            <div class="nav-login">
+                <a href="#"><button>Login</button></a>
+            </div>
+
+            <div class="nav-signup">
+                <a href="#"><button>Sign-up</button></a>
+            </div>
+
+            <div>
+                <h1>Score: {{session.get("score")}}</h1>
+            </div>
+        </div>
+
+    </div>
+{%block content%}
+{%endblock%}
+</body>
+</html>

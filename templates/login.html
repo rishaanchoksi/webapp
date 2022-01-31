@@ -1,0 +1,32 @@
+{%extends "layout.html"%}
+{%block title%}
+Login
+{%endblock%}
+{%block content%}
+    <form action="/login" method="POST">
+
+        <div class="field">
+            <div class="label">
+                <label for="">Email</label>
+            </div>
+            <div class="input">
+                <input type="email" name="email" id="">
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="label">
+                <label for="">Password</label>
+            </div>
+            <div class="input">
+                <input type="password" name="password" id="">
+            </div>
+        </div>
+
+        <div class="button">
+            <button type="submit">Login</button>
+    </form>
+    <p><a href="/registration">New user? Click here</a></p>
+    {{message}}
+{%endblock%}
+

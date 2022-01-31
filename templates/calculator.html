@@ -1,0 +1,33 @@
+{%extends "layout.html"%}
+{%block title%}
+Calculator
+{%endblock%}
+{%block content%}
+<form action="/calculator" method="POST"> 
+
+        <div>
+            <label for="">First Number</label>
+            <input type="number" name="num1">
+        </div>
+
+        <div>
+            <label for="">Second Number</label>
+            <input type="number" name="num2">
+        </div>
+
+        <div>
+            <label for="">Operator</label>
+            <select name="operator" id="">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="divide">/</option>
+                <option value="multiply">x</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    {{result}}
+{%endblock%}

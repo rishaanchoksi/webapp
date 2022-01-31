@@ -1,0 +1,53 @@
+body {
+    background-color:darksalmon;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 20px;
+}
+
+form {
+    background-color: darkseagreen;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    line-height: 50px;
+    box-shadow: 0 0 10px 0;
+}
+
+option, select {
+    font-size: 20px;
+    font-family: fantasy;
+    color:khaki;
+    background-color: lightblue;
+}
+
+input {
+    font-size: 20px;
+    font-family: fantasy;
+    color:khaki;
+    background-color: lightblue;
+}
+
+button {
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: fantasy;
+    font-size: 20px;
+    width: 200px;
+}
+
+p {
+    color:yellow;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}

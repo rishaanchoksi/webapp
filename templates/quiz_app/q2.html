@@ -1,0 +1,36 @@
+{%extends "quizlayout.html"%}
+{%block content%}
+    <div class="qbody">
+        <div class="question">
+            <p>Which language uses .py file extension</p>
+        </div>
+
+        <form action="/q2" method="POST">
+            
+            <div class="answer">
+                <label for="">Python</label>
+                <input type="radio" name="answer" value="Python">
+            </div>
+
+            <div class="answer">
+                <label for="">HTML</label>
+                <input type="radio" name="answer">
+            </div>
+
+            <div class="answer">
+                <label for="">CSS</label>
+                <input type="radio" name="answer">
+            </div>
+
+            <div class="answer">
+                <label for="">Java</label>
+                <input type="radio" name="answer">
+            </div>
+
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    {{result}}  
+{%endblock%}

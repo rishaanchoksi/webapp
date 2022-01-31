@@ -1,0 +1,13 @@
+homework 
+
+eligible for vote (age)
+if letter is vowel or constanant 
+
+Using Nested if condition write a programme to find shipping cost with weight as input
+If weight is equal to 20kg, cost is $ 10 per KG 
+If weight greater than 10Kgs to 20kgs,  cost is Rs $12 per KG 
+If  weight greater than 1kg and less than  10Kgs weight of parcel. : cost is $ 14 per KG 
+Parcels of weight less than 1 kg are sent Free
+We wont deliver the parcels more than 20 kg
+
+login page (email and password)

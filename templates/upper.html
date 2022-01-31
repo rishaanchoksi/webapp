@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+{%block title%}
+Upper
+{%endblock%}
+{%block content%}
+    <form action="/validate_upper">
+        <label for="">Enter a word or letter</label>
+        <input type="text" name="string">
+        <button type="submit">Submit</button>
+    </form>
+    {{result}}
+{%endblock%}

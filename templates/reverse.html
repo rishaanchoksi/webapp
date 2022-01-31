@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+{%block title%}
+Reverse
+{%endblock%}
+{%block content%}
+    <form action="/reverse" method="POST">
+    <label for="">Enter a string</label>
+    <input type="text" name="string">
+    <button type=submit>submit</button>
+    </form>
+    <p>{{result}}</p>
+{%endblock%}

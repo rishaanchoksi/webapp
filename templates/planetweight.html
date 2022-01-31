@@ -1,0 +1,24 @@
+{%extends "layout.html"%}
+{%block title%}
+Planet weight
+{%endblock%}
+{%block content%}
+<form action="/planetweight" method="POST">
+    <div>
+        <label for="">What planet do you want to calculate your weight in?</label>
+        <select name="planet" id="">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+        </select>
+        <button type="submit">Submit</button>
+    </div>
+
+    
+    {{planetweight}}
+</form>
+{%endblock%}

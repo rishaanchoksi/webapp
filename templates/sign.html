@@ -1,0 +1,29 @@
+{%extends "layout.html"%}
+{%block title%}
+Astrological Sign
+{%endblock%}
+{%block content%}
+    <form action="/sign" method="post">
+        <label for="">Enter your birth month</label>
+        <select name="months" id="">
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="Mar">March</option>
+            <option value="Apr">April</option>
+            <option value="May">May</option>
+            <option value="Jun">June</option>
+            <option value="Jul">July</option>
+            <option value="Aug">August</option>
+            <option value="Sep">September</option>
+            <option value="Oct">October</option>
+            <option value="Nov">November</option>
+            <option value="Dec">December</option>
+        </select>
+        <br>
+        <label for="">Enter the day you were born</label>
+        <input type="number" name="date" min="1" max="31">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>{{sign}}</p>
+{%endblock%}

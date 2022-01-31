@@ -1,0 +1,26 @@
+{%extends "layout.html"%}
+{%block title%}
+BMI
+{%endblock%}
+{%block content%}
+<form action="/bmi" method="POST">
+    <div>
+        <label for="">Enter your weight in kg</label>
+        <input type="text" name="weight">
+    </div>
+
+    <div>
+        <label for="">Enter your height in meters</label>
+        <input type="text" name="height">
+    </div>
+
+        <button type="submit">Submit</button>
+    {{bmi}}
+
+
+</form>
+
+{%if session.get("weight")%}
+<a href="/planetweight"><p>Click here to calculate your weight on different planets</p></a>
+{%endif%}
+{%endblock%}

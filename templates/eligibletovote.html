@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+{%block title%}
+Eligibility
+{%endblock%}
+{%block content%}
+    <form action="/validate_eligibility">
+        <label for="">Enter your age</label>
+        <input type="text" name="age">
+        <button type="submit">submit</button>
+    </form>
+    {{result}}
+{%endblock%}
