@@ -9,11 +9,6 @@ app.config["SECRET_KEY"] = "string"
 def not_found(e):
     return render_template("notfound.html")
 
-@app.route("/")
-@app.route("/home")
-def hello_world():
-    return "<p>Welcome to Rishaans web app</p>"
-
 @app.route('/test', methods=['GET', 'POST'])
 def test():
     return redirect("/home")
@@ -269,7 +264,8 @@ def registration():
             if password==confirmpassword:
                 message="registration succesful"
                 return render_template("login.html", message=message)
-
+            
+@app.route("/")            
 @app.route('/login', methods=["POST", "GET"])
 def login():
     if request.method=="GET":
